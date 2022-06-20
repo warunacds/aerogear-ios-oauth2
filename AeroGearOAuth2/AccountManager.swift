@@ -100,7 +100,7 @@ open class KeycloakConfig: Config {
         let defaulRealmName = String(format: "%@-realm", clientId)
         let realm = realm ?? defaulRealmName
         super.init(
-            base: "\(host)/auth",
+            base: "\(host)",
             authzEndpoint: "realms/\(realm)/protocol/openid-connect/auth",
             redirectURL: "\(bundleString)://oauth2Callback",
             accessTokenEndpoint: "realms/\(realm)/protocol/openid-connect/token",
