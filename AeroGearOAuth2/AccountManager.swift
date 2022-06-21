@@ -110,9 +110,9 @@ open class KeycloakConfig: Config {
             isOpenIDConnect: isOpenIDConnect
         )
         // Add openIdConnect scope
-//        if self.isOpenIDConnect {
-//            self.scopes += ["openid", "email", "profile"]
-//        }
+        if self.isOpenIDConnect {
+            self.scopes += ["openid"]
+        }
     }
 }
 
