@@ -102,7 +102,7 @@ open class KeycloakConfig: Config {
         super.init(
             base: "\(host)",
             authzEndpoint: "realms/\(realm)/protocol/openid-connect/auth",
-            redirectURL: "\(bundleString):/callback",
+            redirectURL: "\(bundleString)://callback",
             accessTokenEndpoint: "realms/\(realm)/protocol/openid-connect/token",
             clientId: clientId,
             refreshTokenEndpoint: "realms/\(realm)/protocol/openid-connect/token",
